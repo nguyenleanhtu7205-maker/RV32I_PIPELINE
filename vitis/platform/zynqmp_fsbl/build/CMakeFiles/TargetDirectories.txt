@@ -1,0 +1,4 @@
+D:/ProjectVivado/DoAn_RISCV/vitis/platform/zynqmp_fsbl/build/CMakeFiles/fsbl.elf.dir
+D:/ProjectVivado/DoAn_RISCV/vitis/platform/zynqmp_fsbl/build/CMakeFiles/print_build_info.dir
+D:/ProjectVivado/DoAn_RISCV/vitis/platform/zynqmp_fsbl/build/CMakeFiles/edit_cache.dir
+D:/ProjectVivado/DoAn_RISCV/vitis/platform/zynqmp_fsbl/build/CMakeFiles/rebuild_cache.dir
