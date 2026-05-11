@@ -1,0 +1,431 @@
+
+*** Running vivado
+    with args -log BD_1_RV_IP_AXI_Wrapper_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BD_1_RV_IP_AXI_Wrapper_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source BD_1_RV_IP_AXI_Wrapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 384.281 ; gain = 73.324
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/AISEQ/Desktop/HT/RV/PackageIP/RV_IP_AXI_WRAPPER'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 426.566 ; gain = 42.285
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: BD_1_RV_IP_AXI_Wrapper_0_0
+Command: synth_design -top BD_1_RV_IP_AXI_Wrapper_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5960
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1764.480 ; gain = 331.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BD_1_RV_IP_AXI_Wrapper_0_0' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ip/BD_1_RV_IP_AXI_Wrapper_0_0/synth/BD_1_RV_IP_AXI_Wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'RV_IP_AXI_Wrapper' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/RV_IP_AXI_Wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RV_IP' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/RV_IP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MainDatapath' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/MainDatapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionFetch' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/InstructionFetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ProgramCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ProgramCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/InstructionMemory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/InstructionMemory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionFetch' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/InstructionFetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionDecode' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/InstructionDecode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ControlUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BranchDecisionUnit' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/BranchDecisionUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BranchDecisionUnit' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/BranchDecisionUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/RegisterFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/RegisterFile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateGenerator' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ImmediateGenerator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateGenerator' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ImmediateGenerator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetectionUnit' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/HazardDetectionUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetectionUnit' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/HazardDetectionUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionDecode' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/InstructionDecode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Execute' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/Execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ALUControl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ALUControl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingUnit' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ForwardingUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ForwardingUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Execute' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/Execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/Memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'WriteBack' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/WriteBack.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBack' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/WriteBack.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'MainDatapath' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/MainDatapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BusInterconnect' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/BusInterconnect.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'BusInterconnect' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/BusInterconnect.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/DataMemory.v:23]
+INFO: [Synth 8-226] default block is never used [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/DataMemory.v:72]
+INFO: [Synth 8-226] default block is never used [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/DataMemory.v:79]
+INFO: [Synth 8-226] default block is never used [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/DataMemory.v:88]
+INFO: [Synth 8-226] default block is never used [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/DataMemory.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/DataMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_IP' [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ALU_IP.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_IP' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/ALU_IP.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RV_IP' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/RV_IP.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RV_IP_AXI_Wrapper' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ipshared/ee67/src/RV_IP_AXI_Wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BD_1_RV_IP_AXI_Wrapper_0_0' (0#1) [c:/Users/AISEQ/Desktop/HT/RV/RV.gen/sources_1/bd/BD_1/ip/BD_1_RV_IP_AXI_Wrapper_0_0/synth/BD_1_RV_IP_AXI_Wrapper_0_0.v:53]
+WARNING: [Synth 8-7129] Port S1_ready in module BusInterconnect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module WriteBack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemToReg in module ForwardingUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[6] in module ALUControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[4] in module ALUControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[3] in module ALUControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[2] in module ALUControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[1] in module ALUControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func7[0] in module ALUControl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HazardDetected in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[19] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[18] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[17] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[16] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[1] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addra[0] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[31] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[30] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[29] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[28] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[27] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[26] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[25] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[24] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[23] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[22] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[21] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[20] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[19] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[18] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[17] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[16] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[15] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[14] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[13] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[12] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[11] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[10] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[9] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[8] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[7] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[6] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[5] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[4] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[3] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[2] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[1] in module ProgramCounter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ReadData1[0] in module ProgramCounter is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 1878.965 ; gain = 445.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1878.965 ; gain = 445.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1878.965 ; gain = 445.875
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 1878.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1945.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1963.125 ; gain = 17.922
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 1963.125 ; gain = 530.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 1963.125 ; gain = 530.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 1963.125 ; gain = 530.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:01:07 . Memory (MB): peak = 1963.125 ; gain = 530.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 53    
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 35    
+	   6 Input   32 Bit        Muxes := 2     
+	  11 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 47    
+	  10 Input    1 Bit        Muxes := 12    
+	   4 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port S1_ready in module BusInterconnect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MemToReg in module ForwardingUnit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HazardDetected in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Func7[6] in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Func7[4] in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Func7[3] in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Func7[2] in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Func7[1] in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Func7[0] in module Execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[31] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[30] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[29] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[28] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[27] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[26] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[25] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[24] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[23] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[22] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[21] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[20] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[19] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[18] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[17] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[16] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[1] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bram_addra[0] in module MainDatapath is either unconnected or has no load
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "\inst/rv_core/PROCESSOR/IF_STAGE/IM/Memory_reg ",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "\inst/rv_core/PROCESSOR/IF_STAGE/IM/Memory_reg ",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "\inst/rv_core/PROCESSOR/IF_STAGE/IM/Memory_reg ",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "\inst/rv_core/PROCESSOR/IF_STAGE/IM/Memory_reg ",trying to implement using LUTRAM
+INFO: [Synth 8-6851] RAM (inst/rv_core/DMEM/Memory_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:02:50 . Memory (MB): peak = 1963.125 ; gain = 530.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------------+------------------------------+-----------+----------------------+-------------------+
+|Module Name                | RTL Object                   | Inference | Size (Depth x Width) | Primitives        | 
++---------------------------+------------------------------+-----------+----------------------+-------------------+
+|\inst/rv_core/PROCESSOR    | IF_STAGE/IM/Memory_reg       | Implied   | 16 K x 32            | RAM256X1D x 2048  | 
+|BD_1_RV_IP_AXI_Wrapper_0_0 | inst/rv_core/DMEM/Memory_reg | Implied   | 16 K x 32            | RAM512X1S x 1024  | 
++---------------------------+------------------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:07 ; elapsed = 00:03:56 . Memory (MB): peak = 2449.184 ; gain = 1016.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:03:58 . Memory (MB): peak = 2456.324 ; gain = 1023.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------------------+------------------------------+-----------+----------------------+-------------------+
+|Module Name                | RTL Object                   | Inference | Size (Depth x Width) | Primitives        | 
++---------------------------+------------------------------+-----------+----------------------+-------------------+
+|\inst/rv_core/PROCESSOR    | IF_STAGE/IM/Memory_reg       | Implied   | 16 K x 32            | RAM256X1D x 2048  | 
+|BD_1_RV_IP_AXI_Wrapper_0_0 | inst/rv_core/DMEM/Memory_reg | Implied   | 16 K x 32            | RAM512X1S x 1024  | 
++---------------------------+------------------------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:15 ; elapsed = 00:04:08 . Memory (MB): peak = 2530.707 ; gain = 1097.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:28 ; elapsed = 00:04:26 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:28 ; elapsed = 00:04:26 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:29 ; elapsed = 00:04:28 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:29 ; elapsed = 00:04:28 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:30 ; elapsed = 00:04:28 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:30 ; elapsed = 00:04:28 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY8    |    26|
+|2     |LUT1      |     3|
+|3     |LUT2      |   109|
+|4     |LUT3      |   304|
+|5     |LUT4      |   199|
+|6     |LUT5      |   560|
+|7     |LUT6      |  2015|
+|8     |MUXF7     |   687|
+|9     |MUXF8     |   264|
+|10    |RAM256X1D |  2048|
+|11    |RAM512X1S |  1024|
+|12    |FDCE      |  1262|
+|13    |FDPE      |    37|
+|14    |FDRE      |   783|
+|15    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:30 ; elapsed = 00:04:28 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:04:18 . Memory (MB): peak = 2544.156 ; gain = 1026.906
+Synthesis Optimization Complete : Time (s): cpu = 00:02:30 ; elapsed = 00:04:28 . Memory (MB): peak = 2544.156 ; gain = 1111.066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.437 . Memory (MB): peak = 2556.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4049 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 8 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2608.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3072 instances were transformed.
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 2048 instances
+  RAM512X1S => RAM512X1S (MUXF7(x4), MUXF8(x2), MUXF9, RAMS64E1(x8)): 1024 instances
+
+Synth Design complete, checksum: b0ac8466
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 92 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:13 ; elapsed = 00:05:45 . Memory (MB): peak = 2608.367 ; gain = 2152.887
+INFO: [Common 17-1381] The checkpoint 'C:/Users/AISEQ/Desktop/HT/RV/RV.runs/BD_1_RV_IP_AXI_Wrapper_0_0_synth_1/BD_1_RV_IP_AXI_Wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2608.367 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP BD_1_RV_IP_AXI_Wrapper_0_0, cache-ID = ba1c917d838404d5
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/AISEQ/Desktop/HT/RV/RV.runs/BD_1_RV_IP_AXI_Wrapper_0_0_synth_1/BD_1_RV_IP_AXI_Wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2608.367 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file BD_1_RV_IP_AXI_Wrapper_0_0_utilization_synth.rpt -pb BD_1_RV_IP_AXI_Wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May  9 11:18:53 2026...
